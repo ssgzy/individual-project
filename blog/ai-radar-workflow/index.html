@@ -14,27 +14,25 @@
   <header class="site-header">
     <div class="site-shell nav-shell">
       <a class="logo" href="../../">Sam Gu</a>
-      <nav class="site-nav">
-        <a href="../../">Home</a>
-        <a href="../../about/">About</a>
-        <a href="../../skills/">Skills</a>
-        <a href="../../projects/">Projects</a>
-        <a href="../../resume/">Resume</a>
-        <a href="../../contact/">Contact</a>
-        <a class="active" href="../../blog/">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a><a href="../../about">About</a><a href="../../skills/">Skills</a><a href="../../projects/">Projects</a><a href="../../resume/">Resume</a><a href="../../contact/">Contact</a><a class="active" href="../../blog/">Blog</a>
       </nav>
     </div>
   </header>
+
   <main class="site-shell">
     <article class="card">
       <h1>Building AI Radar: Designing a Personal Research Intelligence Workflow</h1>
       <p class="card-meta">2026-03-22 · AI Workflow</p>
-      <p>Placeholder article: this page shows how I connected multi-source inputs and generated digest outputs for practical use.</p>
-      <p>Workflow stages: (1) source configuration, (2) structured fetch, (3) deduplicate and enrich, (4) scoring, (5) weekly and daily report packaging.</p>
-      <p>Tag: <span class="tag-inline">AI Workflow</span> <span class="tag-inline">Automation</span> <span class="tag-inline">LLM</span></p>
+      <p>In this process, I started from one practical pain point: useful AI updates were scattered across too many places, and there was no reliable weekly summary that I could trust. AI Radar addresses this by keeping everything local first, so data ownership and reproducibility stay clear.</p>
+      <p>The pipeline has five stages. First, source configuration and collection from public channels. Second, structured cleaning and deduplication to remove repeated or noisy entries. Third, scoring and tagging for topic quality and actionability. Fourth, automatic summarization and short insight extraction. Fifth, scheduled export of daily digests and weekly review packets.</p>
+      <p>Each stage writes to explicit outputs (raw, processed, scored, report-ready), so the same workflow can be audited and replayed when assumptions change. This is important for AI work because upstream data can be noisy, and reviewability directly affects downstream decision quality.</p>
+      <p>My focus is not just model novelty; it is execution reliability. When the system is used every week, stable structure often matters more than one-off performance metrics.</p>
+      <p>Tags: <span class="tag-inline">AI Workflow</span> <span class="tag-inline">Automation</span> <span class="tag-inline">LLM</span></p>
       <a class="btn btn-solid" href="../">Back to Blog</a>
     </article>
   </main>
+
   <footer class="site-footer"><div class="site-shell">© 2026 Sam Gu</div></footer>
 </body>
 </html>

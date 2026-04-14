@@ -14,21 +14,25 @@
   <header class="site-header">
     <div class="site-shell nav-shell">
       <a class="logo" href="../../">Sam Gu</a>
-      <nav class="site-nav">
-        <a href="../../">Home</a><a href="../../about/">About</a><a href="../../skills/">Skills</a><a href="../../projects/">Projects</a><a href="../../resume/">Resume</a><a href="../../contact/">Contact</a><a class="active" href="../../blog/">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a><a href="../../about">About</a><a href="../../skills/">Skills</a><a href="../../projects/">Projects</a><a href="../../resume/">Resume</a><a href="../../contact/">Contact</a><a class="active" href="../../blog/">Blog</a>
       </nav>
     </div>
   </header>
+
   <main class="site-shell">
     <article class="card">
       <h1>What I Learned from Training a Sokoban Agent</h1>
       <p class="card-meta">2026-03-05 · Reinforcement Learning</p>
-      <p>Placeholder article: key lessons include careful reward shaping, evaluation consistency, and avoiding overfitting the solver to only easy levels.</p>
-      <p>Recommended sequence: baseline check, reward design, memory tuning, training budget control, and post-train diagnostics.</p>
-      <p>Tag: <span class="tag-inline">Reinforcement Learning</span> <span class="tag-inline">Stable RL</span> <span class="tag-inline">Experiment Design</span></p>
+      <p>What looked like a standard RL assignment became a practical lesson in disciplined experimentation. Sokoban has sparse rewards and deceptive solutions, so early overfitting is easy and hard to notice.</p>
+      <p>The first lesson was baseline control. I kept a strict baseline chain, then changed one variable at a time: reward shaping, replay strategy, learning rate, and evaluation policy. This avoided confounding results, which is often the hidden failure point in student-level RL projects.</p>
+      <p>The second lesson was budget discipline. RL quickly burns compute if uncontrolled. I added early termination metrics and per-run checkpoints, then prioritized experiments that improved learning stability rather than only peak score.</p>
+      <p>The final improvement came from reproducibility habits: deterministic seeds, fixed splits, and a clear result note format. These do not always raise absolute performance immediately, but they make iteration faster and less confusing later.</p>
+      <p>Tags: <span class="tag-inline">Reinforcement Learning</span> <span class="tag-inline">Training Design</span> <span class="tag-inline">Reproducibility</span></p>
       <a class="btn btn-solid" href="../">Back to Blog</a>
     </article>
   </main>
+
   <footer class="site-footer"><div class="site-shell">© 2026 Sam Gu</div></footer>
 </body>
 </html>

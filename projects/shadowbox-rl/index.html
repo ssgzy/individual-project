@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShadowBox RL project details." />
   <title>ShadowBox RL Sokoban — Project Detail</title>
   <link rel="stylesheet" href="../../styles/main.css" />
   <style>
@@ -13,31 +14,27 @@
   <header class="site-header">
     <div class="site-shell nav-shell">
       <a class="logo" href="../../">Sam Gu</a>
-      <nav class="site-nav">
-        <a href="../../">Home</a>
-        <a href="../../about/">About</a>
-        <a href="../../skills/">Skills</a>
-        <a class="active" href="../../projects/">Projects</a>
-        <a href="../../resume/">Resume</a>
-        <a href="../../contact/">Contact</a>
-        <a href="../../blog/">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a><a href="../../about/">About</a><a href="../../skills/">Skills</a><a class="active" href="../../projects/">Projects</a><a href="../../resume/">Resume</a><a href="../../contact/">Contact</a><a href="../../blog/">Blog</a>
       </nav>
     </div>
   </header>
+
   <main class="site-shell">
     <article class="card project-detail">
       <h1>ShadowBox — Reinforcement Learning for Sokoban</h1>
       <p class="card-meta">2026 · Individual Project</p>
-      <p><strong>Problem:</strong> Train a stable RL agent for Sokoban with limited training time and difficult board states.</p>
-      <p><strong>Data:</strong> Simulator-generated state transitions, reward traces, and evaluation logs.</p>
-      <p><strong>Approach:</strong> Implemented a Rainbow DQN-style method with reward redesign, hyper-parameter tuning, and repeatable training scripts.</p>
-      <p><strong>Outcome / Impact:</strong> Achieved strong performance gains on benchmark sets with better training efficiency.</p>
-      <p><strong>Your contribution:</strong> Built training/evaluation pipeline and documented performance and implementation trade-offs.</p>
+      <p><strong>Problem:</strong> Train a reinforcement learning agent that can efficiently solve Sokoban levels with better learning consistency under budget limits.</p>
+      <p><strong>Data:</strong> Environment-generated transitions, reward signals, and evaluation logs from iterative experiments.</p>
+      <p><strong>Approach:</strong> Implemented Rainbow DQN-style improvements, tuned rewards for puzzle dynamics, and structured training/evaluation reporting.</p>
+      <p><strong>Outcome / Impact:</strong> Achieved more stable training curves and better completion on selected levels compared with baseline implementations.</p>
+      <p><strong>Your contribution:</strong> Owned training framework code, hyperparameter strategy, and reproducible experiment record keeping.</p>
       <p><strong>Link:</strong> <a href="https://github.com/ssgzy/CDS524_individual-assignment_Sam" target="_blank">github.com/ssgzy/CDS524_individual-assignment_Sam</a></p>
-      <p><strong>Status:</strong> In portfolio-ready state.</p>
+      <p><strong>Status:</strong> Suitable as a main featured project.</p>
       <a class="btn btn-solid" href="../">Back to Projects</a>
     </article>
   </main>
+
   <footer class="site-footer"><div class="site-shell">© 2026 Sam Gu</div></footer>
 </body>
 </html>

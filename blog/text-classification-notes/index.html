@@ -14,21 +14,25 @@
   <header class="site-header">
     <div class="site-shell nav-shell">
       <a class="logo" href="../../">Sam Gu</a>
-      <nav class="site-nav">
-        <a href="../../">Home</a><a href="../../about/">About</a><a href="../../skills/">Skills</a><a href="../../projects/">Projects</a><a href="../../resume/">Resume</a><a href="../../contact/">Contact</a><a class="active" href="../../blog/">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a><a href="../../about">About</a><a href="../../skills/">Skills</a><a href="../../projects/">Projects</a><a href="../../resume/">Resume</a><a href="../../contact/">Contact</a><a class="active" href="../../blog/">Blog</a>
       </nav>
     </div>
   </header>
+
   <main class="site-shell">
     <article class="card">
       <h1>From Baseline to Better Results: Notes from a Text Classification Project</h1>
       <p class="card-meta">2026-02-16 · NLP</p>
-      <p>Placeholder article: the project stressed clear preprocess pipelines and consistent evaluation, with practical improvements coming from feature selection and model calibration.</p>
-      <p>Core notes: keep data splits fixed, isolate changes per experiment, keep evaluation scripts reproducible, and write concise failure analyses.</p>
-      <p>Tag: <span class="tag-inline">NLP</span> <span class="tag-inline">Text Classification</span> <span class="tag-inline">Reproducibility</span></p>
+      <p>The first step was to stop relying on “single run wins.” In team assignments, text-classification performance can look unstable if preprocessing, sampling, and reporting are not standardized.</p>
+      <p>In this project, we first compared baseline settings, then isolated improvements one by one: cleaning strategy, vectorization choice, training settings, and post-processing. Each change was run with fixed seeds and logged with clear notes.</p>
+      <p>The most meaningful gains came from reproducibility structure itself. Once the process was comparable across runs, tuning became less noisy and findings became easier to defend in review.</p>
+      <p>My takeaway is simple: good results come from repeatable experiments, not only model selection. A strong process often improves both short-term score and long-term maintainability.</p>
+      <p>Tags: <span class="tag-inline">NLP</span> <span class="tag-inline">Text Classification</span> <span class="tag-inline">Experiment Tracking</span></p>
       <a class="btn btn-solid" href="../">Back to Blog</a>
     </article>
   </main>
+
   <footer class="site-footer"><div class="site-shell">© 2026 Sam Gu</div></footer>
 </body>
 </html>

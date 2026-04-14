@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal portfolio and job-seeking website for Sam Gu, data science and AI engineering work." />
-  <title>Sam Gu | AI Product & Research Portfolio</title>
+  <meta name="description" content="Sam Gu — AI Product Development and Applied AI portfolio. Projects, background, and writing." />
+  <title>Sam Gu | AI Product &amp; Research Portfolio</title>
   <link rel="stylesheet" href="./styles/main.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@400;600;700&display=swap');
@@ -14,7 +14,7 @@
   <header class="site-header">
     <div class="site-shell nav-shell">
       <a class="logo" href="./">Sam Gu</a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Primary navigation">
         <a class="active" href="./">Home</a>
         <a href="./about/">About</a>
         <a href="./skills/">Skills</a>
@@ -28,21 +28,32 @@
 
   <main class="site-shell">
     <section class="hero card">
-      <p class="eyebrow">MSc Data Science Candidate · Lingnan University</p>
-      <h1>Sam Gu</h1>
-      <h2>I build AI agents, research tools, and product prototypes.</h2>
-      <p class="subtitle">
-        MSc Data Science candidate at Lingnan University seeking opportunities in AI product development and
-        intelligent robotics. I enjoy turning emerging models, workflows, and tools into practical systems people can
-        actually use.
-      </p>
-      <div class="tag-row">
-        <span>Python</span><span>SQL</span><span>AI Agents</span><span>LLM Workflows</span><span>NLP</span><span>Automation</span><span>Rapid Prototyping</span>
-      </div>
-      <div class="cta-group">
-        <a class="btn btn-solid" href="./projects/">View Projects</a>
-        <a class="btn btn-ghost" href="./resume/">Download Resume</a>
-        <a class="btn btn-ghost" href="./contact/">Contact Me</a>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">MSc Data Science Candidate · Lingnan University</p>
+          <h1>Sam Gu</h1>
+          <h2>I build AI agents, research tools, and product prototypes.</h2>
+          <p class="subtitle">
+            I am an AI-focused data science candidate with hands-on experience in research workflow automation, machine learning,
+            and practical software development. My aim is to turn emerging models and methods into practical systems people can actually use.
+          </p>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>AI Agents</span>
+            <span>LLM Workflows</span>
+            <span>NLP</span>
+            <span>Rapid Prototyping</span>
+            <span>Automation</span>
+            <span>Applied AI</span>
+          </div>
+          <div class="cta-group">
+            <a class="btn btn-solid" href="./projects/">View Projects</a>
+            <a class="btn btn-ghost" href="./resume/">Download Resume</a>
+            <a class="btn btn-ghost" href="./contact/">Contact Me</a>
+          </div>
+        </div>
+        <img src="./assets/images/gzp-cartoon-img.jpg" alt="Sam Gu cartoon avatar" class="hero-avatar" />
       </div>
     </section>
 
@@ -55,30 +66,29 @@
         <article class="card project-card">
           <p class="card-meta">2026 – Ongoing · Individual</p>
           <h4>AI Radar — Local AI Research Intelligence</h4>
-          <p>Built a local pipeline that collects AI updates from multiple sources and turns them into structured summaries and scores.</p>
-          <p><strong>Outcome:</strong> Weekly and daily digest workflow with deduplication and tagging.</p>
+          <p>Built a local pipeline that ingests, deduplicates, scores, and summarizes research updates from arXiv, GitHub, RSS, and AI news streams.</p>
+          <p><strong>Outcome:</strong> stable local system with daily digests and weekly product-style intelligence reports.</p>
           <a href="./projects/ai-radar/">Read project</a>
         </article>
         <article class="card project-card">
           <p class="card-meta">Oct 2022 – Mar 2023 · Group</p>
           <h4>Zhenyan Intelligent Monitoring System</h4>
-          <p>Designed a real-time monitoring pipeline with detection and alerts around YOLOv5.
-          </p>
-          <p><strong>Outcome:</strong> Practical surveillance proof-of-concept and stable recognition behavior.</p>
+          <p>Developed a practical monitoring solution with YOLOv5 object detection for alerting and visualized status updates.</p>
+          <p><strong>Outcome:</strong> stronger practical stability and a real deployment-oriented workflow for surveillance cases.</p>
           <a href="./projects/zhenyan-monitoring/">Read project</a>
         </article>
         <article class="card project-card">
           <p class="card-meta">2026 · Individual</p>
           <h4>ShadowBox — Reinforcement Learning for Sokoban</h4>
-          <p>Developed a Rainbow DQN style agent with environment-aware reward shaping and training optimization.</p>
-          <p><strong>Outcome:</strong> Improved learning stability and higher task completion in selected levels.</p>
+          <p>Built a Rainbow DQN-style agent with reward shaping and training optimization for puzzle-level search and success rate consistency.</p>
+          <p><strong>Outcome:</strong> improved training efficiency and robust completion on benchmark levels.</p>
           <a href="./projects/shadowbox-rl/">Read project</a>
         </article>
         <article class="card project-card">
           <p class="card-meta">2026 · Group</p>
           <h4>CDS527 Text Classification</h4>
-          <p>Implemented reproducible text classification experiments on short social text data with clear comparison pipeline.</p>
-          <p><strong>Outcome:</strong> Better result traceability and improved reporting quality.</p>
+          <p>Reproduced a text-classification workflow on social text, improving reproducibility and evaluation clarity.</p>
+          <p><strong>Outcome:</strong> cleaner model comparisons and stronger reporting artifacts.</p>
           <a href="./projects/cds527-text-classification/">Read project</a>
         </article>
       </div>
@@ -87,25 +97,25 @@
     <section>
       <div class="section-head">
         <h3>Latest Writing</h3>
-        <a href="./blog/">Read blog</a>
+        <a href="./blog/">Read all writing</a>
       </div>
       <div class="grid cards-grid">
         <article class="card post-card">
           <p class="card-meta">2026-03-22 · AI Workflow</p>
           <h4>Building AI Radar: Designing a Personal Research Intelligence Workflow</h4>
-          <p>How I structured data collection, summarization, scoring, and weekly review for one-person AI research.</p>
+          <p>How I organized source acquisition, scoring, summarization, and scheduling for sustainable weekly AI trend monitoring.</p>
           <a href="./blog/ai-radar-workflow/">Read article</a>
         </article>
         <article class="card post-card">
           <p class="card-meta">2026-03-05 · Reinforcement Learning</p>
           <h4>What I Learned from Training a Sokoban Agent</h4>
-          <p>Practical trade-offs between reward shaping, training budget, and policy stability in game AI.</p>
+          <p>Lessons on reward shaping, replay design, and budget-aware iteration in practical RL project delivery.</p>
           <a href="./blog/sokoban-rl-notes/">Read article</a>
         </article>
         <article class="card post-card">
           <p class="card-meta">2026-02-16 · NLP</p>
           <h4>From Baseline to Better Results: Notes from a Text Classification Project</h4>
-          <p>Key workflow decisions to keep NLP experiments reproducible in short-cycle academic projects.</p>
+          <p>What changed when preprocessing and experimental management became explicit in a short-cycle team assignment.</p>
           <a href="./blog/text-classification-notes/">Read article</a>
         </article>
       </div>
@@ -115,18 +125,18 @@
       <div>
         <h3>About Preview</h3>
         <p>
-          Hi, I’m Sam Gu, an MSc Data Science student at Lingnan University. I care about making AI ideas
-          usable in real workflows through fast prototyping, clear documentation, and practical system thinking.
+          Sam is a data science candidate and product-minded engineer from Hong Kong. He focuses on rapid experimentation, clear system behavior,
+          and practical deployment readiness across AI tooling workflows.
         </p>
         <p>
-          Education: MSc in Data Science (Expected Jul 2026), Lingnan University; BEng in Computer Science and Technology, Yanching Institute of Technology (2025).
+          Education: MSc in Data Science at Lingnan University (Expected Jul 2026) and BEng in Computer Science and Technology from Yanching Institute of Technology (2025).
         </p>
       </div>
       <div>
         <h4>Focus Areas</h4>
         <ul>
           <li>AI Product Development</li>
-          <li>Agentic AI and workflow automation</li>
+          <li>Agentic AI and automation</li>
           <li>Applied Machine Learning and NLP</li>
           <li>Embodied intelligence exploration</li>
         </ul>
@@ -135,7 +145,7 @@
 
     <section class="card cta-inline">
       <h3>Want to work together?</h3>
-      <p>Have a practical AI problem and want it prototyped quickly? I’m open to collaboration and internship opportunities.</p>
+      <p>Have a practical AI problem and want to move quickly from idea to prototype? I am available for collaboration and internship opportunities.</p>
       <a class="btn btn-solid" href="./contact/">Contact Me</a>
     </section>
   </main>
